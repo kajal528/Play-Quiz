@@ -1,5 +1,5 @@
 html{
-    height: 100%;
+    height: 100vh;
 }
 body{
     background: linear-gradient(30deg, rgb(23, 107, 135), rgb(134, 182, 246));
@@ -10,7 +10,7 @@ button{
 input[type=radio]{
     cursor: pointer;
 }
-@media (max-width : 70rem){
+@media only screen and  (max-width : 70rem){
     .question-page, .score-page{
         margin: 5rem 2rem !important;
     }
@@ -22,17 +22,17 @@ input[type=radio]{
 }
 .home-page h1{
     color: rgb(32, 22, 88);
-    padding: 10px;
+    padding: 0.8rem;
     font-weight: bolder;
 }
 .home-page .subtitle{
     font-size: 1.5rem;
-    margin: 20px 50px;
+    margin: 1.2rem 3rem;
 }
 .quiz-select-container{
    display: flex;
    flex-direction: column;
-   margin:30px;
+   margin: 2rem;
 }
 .quiz-select-container label{
     margin: 1rem auto 0 auto;
@@ -40,20 +40,21 @@ input[type=radio]{
     font-size: 1rem;
     text-align: left;
     display: block;
-    width: 400px;
+    width: 22rem;
 }
 .quiz-select-container select{
     margin: 0.6rem auto;
     background-color: gainsboro;
     font-size: 1rem;
     display: block;
-    width: 400px;
+    width: 22rem;
+    color: black;
 }
 .home-page button{
     margin: 4rem auto;
     bottom: 0;
-    padding: 15px 45px;
-    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    border-radius: 0.8rem;
     font-size: 1rem;
     font-weight: bold;
     border: none;
@@ -66,14 +67,13 @@ input[type=radio]{
     background: white;
     margin: 5rem auto;
     border-radius: 1rem;
-    min-height: 40%;
     padding: 2rem 3rem; 
     display: none;
     -webkit-user-select: none;
     user-select: none;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 1024px;
+    max-width: 64rem;
 }
 .question-page .options, label{
     padding: 0.5rem;
@@ -82,7 +82,7 @@ input[type=radio]{
     padding: 0.6rem 2rem;
     border-radius: 0.5rem;
     border: none;
-    margin-top: 30px;
+    margin-top: 1.8rem;
     font-size: 1rem;
     background:  rgb(23, 107, 135);
     color: white;
@@ -96,7 +96,7 @@ input[type=radio]{
     padding: 0.6rem 2rem;
     border-radius: 0.5rem;
     border: none;
-    margin-top: 30px;
+    margin-top: 1.8rem;
     font-size: 1rem;
     background: white;
     border: 1px solid rgb(157, 178, 188);
