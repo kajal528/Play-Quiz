@@ -1,0 +1,113 @@
+html{
+    height: 100%;
+}
+body{
+    background: linear-gradient(30deg, rgb(23, 107, 135), rgb(134, 182, 246));
+}
+button{
+    cursor: pointer !important;
+}
+input[type=radio]{
+    cursor: pointer;
+}
+@media (max-width : 70rem){
+    .question-page, .score-page{
+        margin: 5rem 2rem !important;
+    }
+}
+.home-page{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.home-page h1{
+    color: rgb(32, 22, 88);
+    padding: 10px;
+    font-weight: bolder;
+}
+.home-page .subtitle{
+    font-size: 1.5rem;
+    margin: 20px 50px;
+}
+.quiz-select-container{
+   display: flex;
+   flex-direction: column;
+   margin:30px;
+}
+.quiz-select-container label{
+    margin: 1rem auto 0 auto;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    display: block;
+    width: 400px;
+}
+.quiz-select-container select{
+    margin: 0.6rem auto;
+    background-color: gainsboro;
+    font-size: 1rem;
+    display: block;
+    width: 400px;
+}
+.home-page button{
+    margin: 4rem auto;
+    bottom: 0;
+    padding: 15px 45px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: rgb(1, 36, 54);
+    color:  rgb(165, 204, 224);
+}
+.question-page
+,.score-page
+{ 
+    background: white;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    min-height: 40%;
+    padding: 2rem 3rem; 
+    display: none;
+    -webkit-user-select: none;
+    user-select: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1024px;
+}
+.question-page .options, label{
+    padding: 0.5rem;
+}
+.question-page button{
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 30px;
+    font-size: 1rem;
+    background:  rgb(23, 107, 135);
+    color: white;
+    cursor: pointer;
+    max-width: 10rem;
+}
+.score-page{
+    text-align: center;
+}
+.score-page button{
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 30px;
+    font-size: 1rem;
+    background: white;
+    border: 1px solid rgb(157, 178, 188);
+    background:  rgb(23, 107, 135);
+    color: white;
+    max-width: 10rem;
+    align-self: center;
+    
+}
+#submit:disabled{
+    background:  rgb(215, 215, 215);
+    color: rgb(111, 111, 111);
+}
+

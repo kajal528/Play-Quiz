@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="home-page">
+           <h1 class="title">Play Quiz</h1>
+            <p class="subtitle">Customise your quiz questions</p>
+            <div class="quiz-select-container">
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option id="any-category" value="any-category" >Any category</option>
+                </select>
+                <label for="difficulty">Difficulty</label>
+                <select name="difficulty" id="difficulty">
+                    <option id="any-difficulty" value="any-difficulty">Any difficulty</option>
+                    <option id="easy" value="easy">Easy</option>
+                    <option id="medium" value="medium">Medium</option>
+                    <option id="hard" value="hard">Hard</option>
+                </select>
+                <label for="amount">Number of Questions</label>
+                <select name="amount" id="amount">
+                    <option id="5" value="5">5</option>
+                    <option id="10" value="10">10</option>
+                    <option id="15" value="15">15</option>
+                    <option id="20" value="20">20</option>
+                    <option id="25" value="25">25</option>
+                </select>
+            </div>
+            <button>Start</button>
+        </div>
+        <div class="question-page">
+        </div>
+        <div class="score-page">
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
