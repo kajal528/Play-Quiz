@@ -10,11 +10,23 @@ button{
 input[type=radio]{
     cursor: pointer;
 }
-@media only screen and  (max-width : 70rem){
+@media screen and  (max-width : 30rem ){
     .question-page, .score-page{
         margin: 5rem 2rem !important;
     }
+    .quiz-select-container{
+        margin: 2rem 0.5rem !important;
+     }
+     .quiz-select-container select, label{
+        width: 15rem !important;
+     }
 }
+@media screen and (max-height: 60rem){
+    #start{
+        margin: 0.5rem 3rem !important;
+    }
+}
+
 .home-page{
     flex-direction: column;
     align-items: center;
@@ -50,7 +62,7 @@ input[type=radio]{
     width: 22rem;
     color: black;
 }
-.home-page button{
+#start{
     margin: 4rem auto;
     bottom: 0;
     padding: 1rem 2.5rem;
