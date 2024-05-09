@@ -1,8 +1,7 @@
-html{
-    height: 100vh;
-}
 body{
+    height: 100vh;
     background: linear-gradient(30deg, rgb(23, 107, 135), rgb(134, 182, 246));
+    overflow: hidden;
 }
 button{
     cursor: pointer !important;
@@ -12,7 +11,8 @@ input[type=radio]{
 }
 @media screen and  (max-width : 30rem ){
     .question-page, .score-page{
-        margin: 5rem 2rem !important;
+        margin: 2rem 2rem !important;
+        padding: 1rem 2rem 2rem !important;
     }
     .quiz-select-container{
         margin: 2rem 0.5rem !important;
